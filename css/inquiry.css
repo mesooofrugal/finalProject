@@ -1,0 +1,55 @@
+body input{margin-left: 10px;
+margin-bottom: 10px;} 
+
+.{
+    margin: 0;
+    padding: 0;
+}
+
+nav a{clear: both;
+    font-size:large;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-left: 20px;
+/* padding-right: 15px; */
+padding-bottom: 5px;}
+a:link{color: grey;
+    text-decoration: none;}
+a:visited{color: black;}
+a:hover{color: lightskyblue;}
+
+h2{text-align: center;
+    color: black;
+    font-size: 250%;
+font-style: italic;
+background-color: lightskyblue;
+font-family: 'Times New Roman', Times, serif;
+padding-top: 20px;
+margin: 20px 20px 20px;
+height: 60px;}
+
+.inquiryRequest{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../images/mapbanner50.jpg);
+    /*https://www.usgs.gov/media/images/map-banner*/
+    background-size: cover;
+}
+
+footer hr{
+    text-align: left;
+    }
+    
+footer nav{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 10;
+        grid-row-end: 11;
+        text-align: left;
+        color: black;
+        font-size: 200%;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dromomania - inquiry form</title>
+        <link rel="icon" href="../images/Dromomania.png" type="Dromomania.img">
+        <!--https://www.facebook.com/dromomania.ok/-->
+        <link rel="stylesheet" href="../css/inquiry.css">
+    </head>
+    <img src="../images/Dromomania.png" alt="Dromomania" id="logo" width="200px" height="100px">
+    <!--https://www.facebook.com/dromomania.ok/-->
+    </head>
+    <body>
+        <nav>
+            <a href="../webpages/homepage.html">Home</a>&nbsp&nbsp
+            <a href="../webpages/gridLayout.html">South America</a>&nbsp&nbsp
+            <a href="../webpages/index.html">Europe</a>&nbsp&nbsp
+            <a href="../webpages/plugin.html">Images</a>&nbsp&nbsp
+            <a href="../webpages/Registration.html">Special Offers</a>&nbsp&nbsp
+            <a href="../webpages/inquiry.html">Inquiry</a>
+        </nav>
+        <h2>Inquiry Request</h2>
+        <div class = "inquiryRequest">
+            <!-- <h1>Reservation Request</h1> -->
+            <div class = "generalInformation">
+                <form>
+                    <fieldset>
+                        <table>
+                        <legend><b>General Information</b></legend><br>
+                    <tr>
+                    <div id="info">
+                        <td><label for = "arrivalDate">When is your birthday: </label></td>
+                        <td><input type = "date" id="arrivalDate" name="arrivalDate" placeholder="MM/DD/YYYY"></td>
+                    </div>
+                    </tr>
+
+                    <tr>
+                    <div id="info">
+                        <td><label for = "nights">How many days do you have off:</label></td>
+                        <td><input type = "text" id="nights" name="nights" placeholder="0"></td>
+                        <div id = "error-input" hidden></div>
+                    </div>
+                    </tr>
+
+                    <tr>
+                    <div id="info">
+                        <td><label for = "adults">How many adults will be joining you:</label></td>
+                        <td><input type = "number" id="adults" name="adults" min="1" max="4" placeholder="0"></td>
+                    </div>
+                    </tr>
+
+                    <tr>
+                    <div id="info">
+                        <td><label for = "children">How many children will be joining you:</label></td>
+                        <td><input type = "number" id="children" name="children" min="0" max="3" placeholder="0" value="0"></td>
+                    </div>
+                    </tr>
+                    </table>
+            </fieldset>
+                </form>
+            </div><br>
+
+            <div class = "preferences">
+                <form>
+                    <fieldset>
+                        <legend><b>Vacation Preferences</b></legend><br>
+                    <div id="info">
+                        <label>Which one interest you the most:</label>
+                        <input type="radio" id="beach" name="vacation" value="beach">
+                        <label for="beach">Beach</label>
+                        <input type="radio" id="nature" name="vaction" value="nature">
+                        <label for="nature">Nature</label>
+                        <input type="radio" id="foodie" name="vacation" value="foodie">
+                        <label for="foodie">Foodie</label>
+                        <input type="radio" id="culture" name="vacation" value="culture">
+                        <label for="culture">Culture</label>
+                        <input type="radio" id="adventure" name="vacation" value="adventure">
+                        <label for="adventure">Adventure</label>
+                    </div>
+
+                    <div id="info">
+                        <label>Where would you prefer to go:</label>
+                        <input type="radio" id="asia" name="travel" value="asia">
+                        <label for="asia">Asia</label>
+                        <input type="radio" id="europe" name="travel" value="europe">
+                        <label for="europe">Europe</label>
+                        <input type="radio" id="northAmerica" name="travel" value="northAmerica">
+                        <label for="northAmerica">North America</label>
+                        <input type="radio" id="centralAmerica" name="travel" value="centralAmerica">
+                        <label for="centralAmerica">Central America</label>
+                        <input type="radio" id="southAmerica" name="travel" value="southAmerica">
+                        <label for="southAmerica">South America</label>
+                        <input type="radio" id="africa" name="travel" value="africa">
+                        <label for="africa">Africa</label>
+                        <input type="radio" id="middleEast" name="travel" value="middleEast">
+                        <label for="middleEast">Middle East</label>
+                    </div>
+
+                    <div id="info">
+                        <label>What is your budget:</label>
+                        <input type="radio" id="under500" name="budget" value="under500">
+                        <label for="under500">Under $500</label>
+                        <input type="radio" id="500-1000" name="budget" value="500-1000">
+                        <label for="500-1000">$500-$1000</label>
+                        <input type="radio" id="1000-2500" name="budget" value="1000-2500">
+                        <label for="1000-2500">$1000-$2500</label>
+                        <input type="radio" id="2500-5000" name="budget" value="2500-5000">
+                        <label for="2500-5000">$2500-$5000</label>
+                        <input type="radio" id="over5000" name="budget" value="over5000">
+                        <label for="over5000">Over $5000</label>
+                    </div>
+                    </fieldset>
+                </form>
+            </div><br>
+
+            <div class = "contactInformation">
+                <form>
+                    <fieldset>
+                        <legend><b>Contact Information</b></legend><br>
+                    <div id="info">
+                        <label for = "name">Name: </label>
+                        <input type = "text" id = "name" placeholder="John Doe">
+                    </div>
+                    <div id="info">
+                        <label for = "email">Email:</label>
+                        <input type = "email" id = "email" placeholder="email@email.com">
+                    </div>
+                    <div id="info">
+                        <label for = "phone">Phone:</label>
+                        <input type = "tel" id = "phone" placeholder="999-999-9999">
+                    </div>
+                    </fieldset>
+                </form><br>
+
+            </div>
+            <form>
+            <button type = "submit" value = "submit " id="submit"> Submit Inquiry </button>
+            </form>
+        </div><br>
+        <script src="../js/inquiry.js"></script>
+        <footer>
+            <hr>
+                <nav>
+                    <a href="../webpages/homepage.html">Home</a>&nbsp&nbsp
+                    <a href="../webpages/gridLayout.html">South America</a>&nbsp&nbsp
+                    <a href="../webpages/index.html">Europe</a>&nbsp&nbsp
+                    <a href="../webpages/plugin.html">Images</a>&nbsp&nbsp
+                    <a href="../webpages/Registration.html">Special Offers</a>&nbsp&nbsp
+                    <a href="../webpages/inquiry.html">Inquiry</a>
+                </nav>
+        </footer>
+    </body>
+</html>
